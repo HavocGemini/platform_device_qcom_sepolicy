@@ -2,9 +2,6 @@
 # AOSP replaced wpa with new definition. this file to be
 # deleted once we have new definition and existing rules are modified
 
-#allow wpa persist_file:dir search;
-#qmux_socket(wpa);
-
 allow hal_wifi_supplicant wifi_vendor_data_file:dir create_dir_perms;
 allow hal_wifi_supplicant wifi_vendor_data_file:dir w_dir_perms;
 allow hal_wifi_supplicant wifi_vendor_data_file:file create_file_perms;
